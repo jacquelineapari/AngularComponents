@@ -1,0 +1,10 @@
+<h3>Random Color Picker</h3>
+
+<button type="button" (click)="generateRandomColor()">Generate Random Color</button>
+<br><br>
+
+<h4>Random Color: {{ randomColor }}</h4>
+
+<div [style.background]="randomColor" style="width: 200px; height: 200px; border: 1px solid black;">
+  Background Color
+</div>

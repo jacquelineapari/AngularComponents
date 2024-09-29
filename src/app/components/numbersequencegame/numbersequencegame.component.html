@@ -1,0 +1,14 @@
+<h3>Number Sequence Game</h3>
+
+<input type="number" placeholder="Enter a number" [(ngModel)]="userInput">
+<button type="button" (click)="generateSequence()">Generate Sequence</button>
+<br><br>
+
+<h4>Sequence: {{ sequence }}</h4>
+<h4>Sum of Sequence: {{ sum }}</h4>
+
+<input type="number" placeholder="Guess the sum" [(ngModel)]="userGuess">
+<button type="button" (click)="checkGuess()">Check Guess</button>
+<br><br>
+
+<h4>{{ result }}</h4>

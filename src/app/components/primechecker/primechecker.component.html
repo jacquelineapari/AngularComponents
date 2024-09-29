@@ -1,0 +1,7 @@
+<h3>Prime Number Checker</h3>
+
+<input type="number" placeholder="Enter a number" [(ngModel)]="userInput">
+<button type="button" (click)="checkPrime()">Check Prime</button>
+<br><br>
+
+<h4 *ngIf="isPrime !== null">The number {{ userInput }} is {{ isPrime ? 'Prime' : 'Not Prime' }}.</h4>

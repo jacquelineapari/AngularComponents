@@ -1,0 +1,10 @@
+<h3>Odd or Even Game</h3>
+
+<input type="number" placeholder="Enter a number" [(ngModel)]="userNumber">
+<br>
+<button type="button" (click)="generateRandomNumber()">Generate Random Number and Play</button>
+<br><br>
+
+<h4>Your Number: {{ userNumber }}</h4>
+<h4>Random Number: {{ randomNumber }}</h4>
+<h4>{{ result }}</h4>

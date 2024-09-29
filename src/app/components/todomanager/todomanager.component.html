@@ -1,0 +1,11 @@
+<input type="text" placeholder="Enter a task" [(ngModel)]="newTask">
+<br>
+<button type="button" (click)="addTask()">Add Task</button>
+<br><br>
+
+<ul>
+  <li *ngFor="let task of toDoList; let i = index">
+    {{ task }}
+    <button type="button" (click)="removeTask(i)">Remove</button>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+<h3>Word Guessing Game</h3>
+
+<h4>Word: {{ displayedWord }}</h4>
+<h4>Attempts Left: {{ attempts }}</h4>
+
+<input type="text" maxlength="1" [(ngModel)]="userInput">
+<button type="button" (click)="guessLetter()" [disabled]="isGameOver()">Guess</button>
+
+<h4 *ngIf="isGameOver()">
+  {{ attempts <= 0 ? 'Game Over! The word was: ' + randomWord : 'Congratulations! You guessed the word!' }}
+</h4>
+
+<button type="button" (click)="resetGame()">Play Again</button>

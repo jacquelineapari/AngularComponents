@@ -1,0 +1,7 @@
+<div>
+    <input type="text" placeholder="Enter your name" [(ngModel)]="name1">
+    <br><br>
+    <button (click)="createGreeting()">{{ name1 ? name1 : "Submit" }}</button>
+  </div>
+  
+  <h2>{{ greeting }}</h2>

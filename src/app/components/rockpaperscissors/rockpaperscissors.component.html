@@ -1,0 +1,14 @@
+<h3>Rock-Paper-Scissors Game</h3>
+
+<label for="choice">Choose Rock, Paper, or Scissors:</label>
+<select [(ngModel)]="userChoice">
+  <option *ngFor="let choice of choices" [value]="choice">{{ choice }}</option>
+</select>
+<br><br>
+
+<button type="button" (click)="playGame()">Play</button>
+<br><br>
+
+<h4>Your Choice: {{ userChoice }}</h4>
+<h4>Computer's Choice: {{ computerChoice }}</h4>
+<h4>{{ result }}</h4>

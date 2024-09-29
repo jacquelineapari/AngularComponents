@@ -1,0 +1,7 @@
+<h3>Random Letter Picker</h3>
+
+<input type="text" placeholder="Enter a word" [(ngModel)]="userInput">
+<button type="button" (click)="pickRandomLetter()">Pick Random Letter</button>
+<br><br>
+
+<h4 *ngIf="randomLetter">Random Letter: {{ randomLetter }}</h4>

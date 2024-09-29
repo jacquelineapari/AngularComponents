@@ -1,0 +1,13 @@
+<div>
+    <input type="number" placeholder="Enter principal amount" [(ngModel)]="principal">
+    <br><br>
+    <input type="number" placeholder="Enter rate of interest" [(ngModel)]="rate">
+    <br><br>
+    <input type="number" placeholder="Enter time in years" [(ngModel)]="time">
+    <br><br>
+    <button (click)="calculateInterest()">Calculate Interest</button>
+  </div>
+  
+  <h3 *ngIf="simpleInterest !== null">Simple Interest: {{ simpleInterest }}</h3>
+  <h3 *ngIf="simpleInterest === null">Please enter valid principal, rate, and time.</h3>
+  

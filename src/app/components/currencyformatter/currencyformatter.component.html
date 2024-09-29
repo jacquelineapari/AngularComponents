@@ -1,0 +1,11 @@
+<div>
+    <input type="number" placeholder="Enter amount" [(ngModel)]="amount">
+    <br><br>
+    <button (click)="formatCurrency()">Format Currency</button>
+  </div>
+  
+  <h3 *ngIf="formattedDollar">Formatted Dollar: {{ formattedDollar }}</h3>
+  <h3 *ngIf="formattedPhp">Formatted PHP: {{ formattedPhp }}</h3>
+  <h3 *ngIf="formattedEuro">Formatted Euro: {{ formattedEuro }}</h3>
+  <h3 *ngIf="formattedDollar === null">Please enter a valid amount.</h3>
+  

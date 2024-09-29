@@ -1,0 +1,22 @@
+<h3>Compound Interest Calculator</h3>
+
+<label>Principal Amount:</label>
+<input type="number" [(ngModel)]="principal" placeholder="Enter principal amount">
+<br><br>
+
+<label>Annual Interest Rate (%):</label>
+<input type="number" [(ngModel)]="rate" placeholder="Enter annual interest rate">
+<br><br>
+
+<label>Time (in years):</label>
+<input type="number" [(ngModel)]="time" placeholder="Enter time in years">
+<br><br>
+
+<label>Compounding Frequency (per year):</label>
+<input type="number" [(ngModel)]="frequency" placeholder="Enter frequency (e.g., 4 for quarterly)">
+<br><br>
+
+<button type="button" (click)="calculateCompoundInterest()">Calculate Compound Interest</button>
+<br><br>
+
+<h4>Compound Interest: {{ compoundInterest | currency }}</h4>

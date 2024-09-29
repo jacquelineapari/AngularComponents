@@ -1,0 +1,10 @@
+<div>
+    <input type="text" placeholder="Enter a username" [(ngModel)]="username">
+    <br><br>
+    <button (click)="validateUsername()">Validate Username</button>
+  </div>
+  
+  <h3 *ngIf="isValid === true">Username is valid!</h3>
+  <h3 *ngIf="isValid === false">Invalid username. It must be at least 5 characters long and contain only letters and numbers.</h3>
+ 
+  

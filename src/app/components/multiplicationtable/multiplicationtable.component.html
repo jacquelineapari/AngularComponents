@@ -1,0 +1,9 @@
+<input type="text" placeholder="Enter a number" [(ngModel)]="number">
+
+<button type="button" (click)="createTable()">Generate a multiplication table</button>
+
+<ul *ngIf="multiplicationTable.length > 0">
+    <li *ngFor="let value of multiplicationTable; let i = index">
+      {{ number }} x {{ i + 1 }} = {{ value }}
+    </li>
+  </ul>

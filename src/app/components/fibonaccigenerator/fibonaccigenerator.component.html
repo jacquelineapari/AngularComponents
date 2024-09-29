@@ -1,0 +1,9 @@
+<div>
+    <input type="number" placeholder="Enter number of Fibonacci terms" [(ngModel)]="n">
+    <br><br>
+    <button (click)="generateFibonacci()">Generate Fibonacci</button>
+  </div>
+  
+  <h2 *ngIf="fibonacciSeries.length > 0">Fibonacci Series: {{ fibonacciSeries.join(', ') }}</h2>
+  <h2 *ngIf="fibonacciSeries.length === 0">Please enter a valid number greater than 0.</h2>
+  

@@ -1,0 +1,15 @@
+<h3>Celsius to Fahrenheit</h3>
+<input type="number" placeholder="Enter temperature in Celsius" [(ngModel)]="celsius">
+<br>
+<button type="button" (click)="convertToFahrenheit()">Convert to Fahrenheit</button>
+<br>
+<h4 *ngIf="fahrenheit !== null">Temperature in Fahrenheit: {{ fahrenheit.toFixed(2) }}°F</h4>
+
+<hr>
+
+<h3>Fahrenheit to Celsius</h3>
+<input type="number" placeholder="Enter temperature in Fahrenheit" [(ngModel)]="fahrenheit">
+<br>
+<button type="button" (click)="convertToCelsius()">Convert to Celsius</button>
+<br>
+<h4 *ngIf="celsius !== null">Temperature in Celsius: {{ celsius.toFixed(2) }}°C</h4>
